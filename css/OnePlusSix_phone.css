@@ -1,22 +1,4 @@
-@media (min-width: 176px) and (max-width: 991px) {
-    .display-none {
-        display: none;
-    }
 
-
-    /*header以上*/
-
-
-    .fzr {
-        font-size: 25px;
-    }
-    .fzrs {
-        font-size: 15px;
-    }
-
-    /*以下footer*/
-
-}
 @media (max-width: 1200px) {
     footer.container-fluid{
         padding: 0;

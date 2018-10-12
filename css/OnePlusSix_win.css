@@ -7,11 +7,11 @@ header{
     border-bottom: 1px solid lightgray;
     transition: all .5s;
 }
-header a{
-    color: #828282;
-}
 header .ic-yijia{
     font-size: 2rem;
+}
+header a{
+    color: #828282;
 }
 header .container-fluid span{
     font-weight: 600;
@@ -51,6 +51,36 @@ header .container-fluid span{
 .account-detail li{
     border-bottom: 1px solid lightgray;
 }
+@media (max-width: 1210px) {
+    /*头部*/
+    .full-screen{
+        position: fixed;
+        z-index: 2;
+        left: 0; top: 0;
+        width: 9999px;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px;
+    }
+    .full-screen li{
+        padding-left: 30px;
+    }
+    .full-screen .own-li{
+        background-color: #f6f6f6;
+    }
+    .full-screen .btn-remove{
+        position: relative;
+        margin-left: -16px;
+    }
+    .full-screen .own-search{
+        position: absolute;
+        z-index: 1;
+        margin: 1% 0 0 2%;
+        font-size: 1.2rem;
+        color: #101920;
+    }
+}
 @media (min-width: 1210px){
     .full-screen li{
         text-align: center;
@@ -58,11 +88,8 @@ header .container-fluid span{
         transition: border-bottom-color .5s, color .5s;
     }
     .full-screen li:hover{
-        border-bottom: 2px solid #eb0028;
-    }
-    .full-screen li:hover a{
         color: #eb0028;
-        text-decoration: none;
+        border-bottom: 2px solid #eb0028;
     }
     .header__right>li:hover{
         border-bottom: 2px solid #101920;
@@ -73,9 +100,6 @@ header .container-fluid span{
     }
     .account:hover .account-detail{
         display: block;
-    }
-    .account-detail a{
-        text-decoration: none;
     }
     .shopping:hover .shopping-detail{
         display: block;
